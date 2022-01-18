@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 100px;
+}
+span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.one{
+    padding-top: 50px;
+    
+}
+
+.two{
+    padding-top: 100px;
+}
+ul{
+    padding-left: 20px;
+}

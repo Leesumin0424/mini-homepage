@@ -1,0 +1,396 @@
+body {
+    background-color: #a3a3a3;
+    /** body에 배경이미지 적용 */
+    background-image: url("../minihomepage/imges/pattern.png");
+    /** 고정된 사이즈로 설정 */
+    background-size: 100px;
+  
+    /** 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+.bookcover {
+    /** 배경 색깔 지정  */
+    background-color: #b4d1da;
+    /** 모서리 둥글게 */
+    border-radius: 9px;
+    /** 윤곽선 */
+    border: 1px solid #738186;
+  
+    /** 기본 너비, 높이 지정 (반응형 X) */
+    width: 960px;
+    height: 660px;
+  
+    /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+    margin: 100px auto;
+  
+    /** .bookdot 요소에서 absolute 속성값을 이용하기 위해 position: relative 로 설정 */
+    position: relative;
+  }
+  .bookdot{
+      width: 97%;
+      height: 95%;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-top: 3px dashed white;
+      border-left: 3px dashed white;
+      border-bottom: 3px dashed white;
+      border-right: 3px dashed white;;
+  }
+  .page{
+      margin-top: 10px;
+      margin-left: 20px;
+      width: 900px;
+      height: 600px;
+      background-color: #E0E0E0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  
+ 
+  .left{
+    height: 100%;
+    width: 250px;
+    text-align: center;
+    margin-right: 40px;
+  }
+  .today{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .profile{
+    background-color: white;
+    width: 100%;
+    height: 520px;
+    border-radius: 15px;
+    
+  }
+  select{
+    margin-top: 30px;
+    width: 200px;
+    height: 30px;
+  }
+  .middle{
+    height: 100%;
+    width: 500px;
+  }
+  .text{
+    display: flex;
+    flex-direction: row;
+  }
+  .message{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .url{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+  }
+  .main{
+    background-color: white;
+    width: 100%;
+    height: 520px;
+    border-radius: 15px;
+  }
+ 
+  .menu{
+    height: 570px;
+    width: 80px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a{
+    text-decoration: none;
+  }
+  .home{
+    background-color:#4682B4 ;
+    color: white;
+    width: 80px;
+    height: 35px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .home:hover{
+    background-color: red;
+  }
+  .home:focus{
+
+  }
+  .diary{
+    background-color:#4682B4 ;
+    color: white;
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .diary:hover{
+    color: orange;
+  }
+  .photos{
+    background-color:#4682B4 ;
+    color: white;
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .photos:focus{
+    
+  }
+  .photos:hover{
+    background-color: yellow;
+  }
+  .guestbook{
+    background-color:#4682B4 ;
+    color: white;
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 0px 5px 5px 0px;
+    
+  }
+  .guestbook:hover{
+    color: green;
+  }
+
+.profile > img{
+  width: 150px;
+  margin-top: 10px;
+}
+
+.profile__text{
+  margin-top: 20px;
+}
+.mwrapper{
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 95%;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.update{
+  color: #4682B4;
+  font-weight: 900;
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Hi Melody', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.board{
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+  font-size: 13px;
+  width: 100%;
+}
+.board_left{
+  width: 400px;
+  height: 100%;
+  line-height: 200%;
+}
+
+.board_right{
+  width: 400px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.photo{
+  background-color: #FF6347;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+.gessi{
+  background-color:  #4682B4;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+
+}
+.list{
+  font-family: 'ACCchildrenheartOTF-Regular';
+}
+
+@font-face
+{ 
+  font-family: 'ACCchildrenheartOTF-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrenheartOTF-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.line{
+  border-bottom: 1px dashed gray;
+}
+.day{
+  color:  #4682B4;
+}
+.miniroom{
+  color: #4682B4;
+  font-weight: 900;
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Hi Melody', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.photoss{
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  overflow: auto;
+}
+.text1{
+  background-color: skyblue;
+  margin: 10px;
+  border-radius: 10px;
+}
+.photo1 > img {
+  width: 100%;
+  height: 400px;
+}
+.text2{
+  background-color: sandybrown;
+  margin: 10px;
+  border-radius: 10px;
+}
+.photo2 > img {
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+.text3{
+  background-color: gray;
+  margin: 10px;
+  border-radius: 10px;
+}
+.mainwrapper{
+  width: 100%;
+  height: 100%;
+}
+.cal{
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  background-color: white; 
+  margin-left: 40px;
+}
+.year{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.date{
+  width: 450px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.number{
+ margin-right: 7px;  
+}
+.mydiary{
+  width: 100%;
+  height: 380px;
+  margin-top: 60px;
+  overflow: auto;
+}
+.secret{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+#button{
+  background-color: white;
+  color: white;
+  border: 0;
+  
+}
+#button:hover{
+  background-color: pink;
+  outline: 0;
+  width: 190px;
+  height: 100px;
+  transition: 300ms ease all;
+}
+.mydiaryis > img{
+  margin-bottom: 20px;
+  border: 1px solid #E0E0E0;
+  width: 100%;
+  height: 100%;
+}
+
+#secret-box{
+  margin: 10px;
+  border: 1px solid rgba(201, 199, 230, 0.918);
+
+}
+.diary-data{
+  color: #4682B4;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#secret-diary{
+  text-align: center;
+}
+#secret-box{
+  display: none;
+}
+.guestbook-image background-1
+{
+  overflow: auto;
+}
+.guestbook-image {
+  height:10rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: start; 
+}
+.guestbook-image > img {
+  width: 30%;
+}
+.guestbookmain{
+  padding-top: 20px;
+  margin-left: 20px;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.guestbooktitle{
+  height: 30px;
+  background-color: rgba(177, 174, 174, 0.548);
+  display: flex;
+  align-items: center;
+}
+.guestbookboard{
+
+}
+.guestbookmeno{
+  margin-left: 20px;
+}
+.guestbookmeno1{
+  margin-left: 20px;
+}
+
